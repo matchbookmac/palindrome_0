@@ -1,8 +1,8 @@
-<h1>Edited text</h1>
+<h1>Palindrome?</h1>
 <% if @result.==(true) %>
-  <p>Your word: <%= @word %> is a palindrome!</p>
+  <p>Your word: <strong><%= @word %></strong> is a palindrome!</p>
 <% elsif @result.==(false) %>
-  <p>Your word: <%= @word %> is not a palindrome :( => <%= @palindrome %></p>
+  <p>Your word: <strong><%= @word %></strong> is not a palindrome :( => <strong><%= @palindrome %></strong></p>
 <% end %>
 <hr>
 <form action='/form'>
