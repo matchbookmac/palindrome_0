@@ -1,0 +1,12 @@
+<h1>Edited text</h1>
+<% if @result.==(true) %>
+  <p>Your word: <%= @word %> is a palindrome!</p>
+<% elsif @result.==(false) %>
+  <p>Your word: <%= @word %> is not a palindrome :( => <%= @palindrome %></p>
+<% end %>
+<hr>
+<form action='/form'>
+  <div class='form-group'>
+    <button type='submit' class='btn'>Try Again</button>
+  </div>
+</form>
